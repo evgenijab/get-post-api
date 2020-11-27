@@ -24,3 +24,9 @@ Upload the plugin to your blog install it and activate it.
 
 You're done!
 Let the plugin take care of the rest!
+
+== IMPORTANT INFO ==
+If featured images are not displaied and $image_data ($image_data = file_get_contents($image_url)) on line 102 returns false:
+- check if allow_url_fopen = On in your php.ini file
+- try with putting php_value allow_url_fopen On in your .htaccess file
+- use curl
